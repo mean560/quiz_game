@@ -33,6 +33,7 @@ public class WordListActivity extends AppCompatActivity {
         rv.setAdapter(adapter); //กำหนด adapter ให้กับ RecycleView
     }
 
+
     class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         WordItem[] items = {
@@ -68,6 +69,7 @@ public class WordListActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
+
             return items.length;
         }
 
